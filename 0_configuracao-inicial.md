@@ -1,7 +1,7 @@
 # Configuração inicial
 
 Assume-se que você já possua uma conta devidamente configurada no
-GitHub. Se ainda não tiver, acesse https://github.com/signup/free para
+GitHub. Se ainda não tiver, acesse <https://github.com/signup/free> para
 criar sua conta.
 
 ## Instalando o git
@@ -79,9 +79,11 @@ em um editor de texto qualquer (*e.g.* gedit, emacs, vim, ...), e
 copie. Alternativemente podemos usar o xclip, um programa em linha de
 comando que facilita essa tarefa sem sair do terminal.
 
-	~$ sudo apt-get install xclip
-	# usa o xclip para copiar o conteúdo do arquivo
-	~$ xclip -sel clip < ~/.ssh/id_rsa.pub
+```shell
+~$ sudo apt-get install xclip
+# usa o xclip para copiar o conteúdo do arquivo
+~$ xclip -sel clip < ~/.ssh/id_rsa.pub
+```
 
 Agora é necessário entra na sua conta no GitHub e colar esse
 conteúdo. Entre em https://github.com/settings/ssh e clique em `Add
