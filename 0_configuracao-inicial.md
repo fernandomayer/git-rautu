@@ -24,13 +24,24 @@ automaticamente em todas as suas ações posteriormente)
 	~$ git config --global user.name "Fernando Mayer"
 	~$ git config --global user.email "fernandomayer@gmail.com"
 	
-> **NOTA** (Password caching: para usar com https. É necessário git >=
-> 1.7.10. A versão atual do Ubuntu 12.04 é
+<!-- > **NOTA** (Password caching: para usar com https. É necessário git >= -->
+<!-- > 1.7.10. A versão atual do Ubuntu 12.04 é -->
 
->        ../git-rautu$ git --version
->            git version 1.7.9.5
+<!-- >        ../git-rautu$ git --version -->
+<!-- >            git version 1.7.9.5 -->
 
-> por isso vou usar ssh)
+<!-- > por isso vou usar ssh) -->
+<!-- funciona nessa versão, por isso vou deixar a descrição -->
+
+Outra configuração útil é configurar o *password caching*, para que você
+não precise digitar usuário e senha todas as vezes que se comunicar com
+o servidor
+
+	~$ git config --global credential.helper cache
+	~$ git config --global credential.helper 'cache --timeout=3600'
+
+Isso vai fazer com que usuário e senha fiquem am cache por uma hora
+(`--timeout=3600` segundos).
 
 ## Configurando as chaves ssh
 
