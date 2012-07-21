@@ -10,4 +10,4 @@ git funcionar. Em sistemas Debian e suas variações (Ubuntu, LinuxMint,
 
 O `ssh` e `openssh-*` são necessários para a comunicação entre sua
 máquina e o servidor do GitHub. Em outros sistemas operacionais baixe os
-arquivos de instalação a partir de [git-scm.com](git-scm.com).
+arquivos de instalação a partir de [git-scm.com](http://git-scm.com).
