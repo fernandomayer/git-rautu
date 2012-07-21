@@ -1,5 +1,5 @@
 # git-rautu
-------------------------------------------------------------------------
+* * * * *
 
 Este material tem o propósito de documentar (e manter atualizados) os
 comandos básicos do sistema controlador de versões
