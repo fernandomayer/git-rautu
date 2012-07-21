@@ -15,7 +15,7 @@ git funcionar. Em sistemas Debian e suas variações (Ubuntu, LinuxMint,
 
 O `ssh` e `openssh-*` são necessários para a comunicação entre sua
 máquina e o servidor do GitHub. Em outros sistemas operacionais baixe os
-arquivos de instalação a partir de http://git-scm.com.
+arquivos de instalação a partir de <http://git-scm.com>.
 
 ## Configurações globais
 
@@ -47,7 +47,7 @@ o servidor
 Isso vai fazer com que usuário e senha fiquem am cache por uma hora
 (`--timeout=3600` segundos).
 
-> Baseado em https://help.github.com/articles/set-up-git
+> Baseado em <https://help.github.com/articles/set-up-git>
 
 ## Configurando as chaves ssh
 
@@ -79,14 +79,21 @@ em um editor de texto qualquer (*e.g.* gedit, emacs, vim, ...), e
 copie. Alternativemente podemos usar o xclip, um programa em linha de
 comando que facilita essa tarefa sem sair do terminal.
 
-```shell
-~$ sudo apt-get install xclip
-# usa o xclip para copiar o conteúdo do arquivo
-~$ xclip -sel clip < ~/.ssh/id_rsa.pub
+
+	~$ sudo apt-get install xclip
+	# usa o xclip para copiar o conteúdo do arquivo
+	~$ xclip -sel clip < ~/.ssh/id_rsa.pub
+
+TESTE: códigos do R com syntax highlighting
+
+```r
+ls()
+rnorm(10)
+plot(x, y, type = "l")
 ```
 
 Agora é necessário entra na sua conta no GitHub e colar esse
-conteúdo. Entre em https://github.com/settings/ssh e clique em `Add
+conteúdo. Entre em <https://github.com/settings/ssh> e clique em `Add
 SSH key`. Você pode dar um nome apenas de referência (**Title**). Cole o
 conteúdo no quadro **Key** e adicione a chave.
 
