@@ -1,7 +1,7 @@
 # Configuração inicial
 
 Assume-se que o leitor já possui uma conta devidamente configurada no
-GitHub. Se ainda não tiver, acesse (https://github.com/signup/free) para
+GitHub. Se ainda não tiver, acesse https://github.com/signup/free para
 criar uma conta.
 
 ## Instalando o git
