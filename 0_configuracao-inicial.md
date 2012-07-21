@@ -1,8 +1,8 @@
 # Configuração inicial
 
-Assume-se que o leitor já possui uma conta devidamente configurada no
+Assume-se que você já possua uma conta devidamente configurada no
 GitHub. Se ainda não tiver, acesse https://github.com/signup/free para
-criar uma conta.
+criar sua conta.
 
 ## Instalando o git
 
@@ -15,7 +15,7 @@ git funcionar. Em sistemas Debian e suas variações (Ubuntu, LinuxMint,
 
 O `ssh` e `openssh-*` são necessários para a comunicação entre sua
 máquina e o servidor do GitHub. Em outros sistemas operacionais baixe os
-arquivos de instalação a partir de [git-scm.com](http://git-scm.com).
+arquivos de instalação a partir de http://git-scm.com.
 
 ## Configurações globais
 
@@ -47,8 +47,7 @@ o servidor
 Isso vai fazer com que usuário e senha fiquem am cache por uma hora
 (`--timeout=3600` segundos).
 
->Baseado em [https://help.github.com/articles/set-up-git]
- (https://help.github.com/articles/set-up-git)
+> Baseado em https://help.github.com/articles/set-up-git
 
 ## Configurando as chaves ssh
 
@@ -74,7 +73,7 @@ servidor via ssh. Depois digite a mesma senha novamente
 
 	Enter same passphrase again:
 
-Agora é necessário copiar o conteúdo _exato_ do arquivo `id_rsa.pub`
+Agora é necessário copiar o conteúdo **exato** do arquivo `id_rsa.pub`
 para poder adicionar à sua conta no GitHub. Para isso, abra este arquivo
 em um editor de texto qualquer (*e.g.* gedit, emacs, vim, ...), e
 copie. Alternativemente podemos usar o xclip, um programa em linha de
@@ -85,7 +84,7 @@ comando que facilita essa tarefa sem sair do terminal.
 	~$ xclip -sel clip < ~/.ssh/id_rsa.pub
 
 Agora é necessário entra na sua conta no GitHub e colar esse
-conteúdo. Entre em (https://github.com/settings/ssh) e clique em `Add
+conteúdo. Entre em https://github.com/settings/ssh e clique em `Add
 SSH key`. Você pode dar um nome apenas de referência (**Title**). Cole o
 conteúdo no quadro **Key** e adicione a chave.
 
@@ -109,5 +108,4 @@ Em uma nova tentativa a mensagem agora deverá ser
 	Hi fernandomayer! You've successfully authenticated, but GitHub does
 	not provide shell access.
 
-> Baseado em [https://help.github.com/articles/generating-ssh-keys]
-(https://help.github.com/articles/generating-ssh-keys)
+> Baseado em https://help.github.com/articles/generating-ssh-keys
