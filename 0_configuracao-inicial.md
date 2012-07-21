@@ -27,8 +27,8 @@ automaticamente em todas as suas ações posteriormente)
 > (Password caching: para usar com https. É necessário git >= 1.7.10. A
 > versão atual do Ubuntu 12.04 é
 
->    ../git-rautu$ git --version
->        git version 1.7.9.5
+>        ../git-rautu$ git --version
+>            git version 1.7.9.5
 
 > por isso vou usar ssh)
 
