@@ -86,7 +86,7 @@ comando que facilita essa tarefa sem sair do terminal.
 
 TESTE: códigos do R com syntax highlighting
 
-```r
+```
 ls()
 rnorm(10)
 plot(x, y, type = "l")
