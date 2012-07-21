@@ -97,15 +97,6 @@ comando que facilita essa tarefa sem sair do terminal.
 ~$ xclip -sel clip < ~/.ssh/id_rsa.pub
 ```
 
-TESTE: códigos do R com syntax highlighting
-
-```r
-ls()
-rnorm(10)
-# plotar um gráfico
-plot(x, y, type = "l")
-```
-
 Agora é necessário entra na sua conta no GitHub e colar esse
 conteúdo. Entre em <https://github.com/settings/ssh> e clique em `Add
 SSH key`. Você pode dar um nome apenas de referência (**Title**). Cole o
@@ -124,14 +115,16 @@ Essa mensagem é normal pois o servidor `github.com` ainda é desconhecido
 pelo ssh. Po isso você pode responder `yes` para armazenar o servidor à
 lista de servidores conhecidos. Uma mensagem como esta deverá aparecer
 
-	Warning: Permanently added 'github.com,207.97.227.239' (RSA) to the
-	list of known hosts.
+```
+Warning: Permanently added 'github.com,207.97.227.239' (RSA) to the	list of known hosts.
+```
 
 Em uma nova tentativa a mensagem agora deverá ser
 
-	~$ ssh -T git@github.com
-	Hi fernandomayer! You've successfully authenticated, but GitHub does
-	not provide shell access.
+```
+~$ ssh -T git@github.com
+Hi fernandomayer! You've successfully authenticated, but GitHub does not provide shell access.
+```
 
 > Baseado em <https://help.github.com/articles/generating-ssh-keys>
 
