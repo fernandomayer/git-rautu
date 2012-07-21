@@ -24,7 +24,7 @@ automaticamente em todas as suas ações posteriormente)
 	~$ git config --global user.name "Fernando Mayer"
 	~$ git config --global user.email "fernandomayer@gmail.com"
 	
-> *NOTA* (Password caching: para usar com https. É necessário git >=
+> **NOTA** (Password caching: para usar com https. É necessário git >=
 > 1.7.10. A versão atual do Ubuntu 12.04 é
 
 >        ../git-rautu$ git --version
