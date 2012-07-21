@@ -23,6 +23,6 @@ Tópicos devem incluir:
 1. Comandos básicos de criação e controle de arquivos
 3. ...
 
-> **NOTA**: Este material é produzido com uma licença
+> **LICENÇA**: Este material é produzido com uma licença
     [Creative Commons BY-NC-SA]
     (http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt)
