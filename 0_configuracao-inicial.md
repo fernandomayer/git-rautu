@@ -109,3 +109,5 @@ Em uma nova tentativa a mensagem agora deverá ser
 	not provide shell access.
 
 > Baseado em https://help.github.com/articles/generating-ssh-keys
+
+Agora o git está pronto para ser usado com o GitHub!
