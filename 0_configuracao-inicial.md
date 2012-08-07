@@ -24,7 +24,7 @@ arquivos de instalação a partir de <http://git-scm.com>.
 Estas configurações precisam ser feitas apenas uma vez, e servem para
 determinar algumas opções globais do git, e serão úteis posteriormente.
 
-Configurar nome de usuário e email (esse é o nome e email que aparecerá
+Configurar nome de usuário e email (esse é o nome e email que aparecerão
 automaticamente em todas as suas ações posteriormente)
 
 ```
@@ -50,7 +50,7 @@ o servidor
 ~$ git config --global credential.helper 'cache --timeout=3600'
 ```
 
-Isso vai fazer com que usuário e senha fiquem am cache por uma hora
+Isso vai fazer com que usuário e senha fiquem em cache por uma hora
 (`--timeout=3600` segundos).
 
 > Baseado em <https://help.github.com/articles/set-up-git>
