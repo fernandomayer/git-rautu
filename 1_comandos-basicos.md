@@ -44,6 +44,8 @@ nothing to commit (create/copy files and use "git add" to track)
 
 Duas coisas chamam a atenção: o Git está mostrando que estamos em um *branch* (ramo) chamado `master`, e que não há nada para ser enviado ou adicionado ao repositório (*commit*). Um branch é como uma "linha de desenvolvimento", sendo que sempre deve existir uma principal (que por padrão é chamada de `master`), mas podem existir muitas outras. Por enquanto vamos trabalhar apenas com o branch principal.
 
+## Criando e rastreando arquivos
+
 Para começar a usar o Git precisamos criar arquivos. No GitHub, um arquivo chamdo `README` serve para identificar um projeto e aparece autoomaticamente na página principal do repositório. Por isso, vamos criar esse arquivo (usando um editor de texto qualquer) e adicionar algum texto como
 
 ```
@@ -98,7 +100,9 @@ $ git status
 nothing to commit (working directory clean)
 ```
 
-Agora o arquivo faz parte do repositório do Git, mas apenas *localmente*. Para enviá-lo ao servidor remoto (já configurado), usamos o comando `git push` com dois argumentos. O primeiro indica o servidor remoto (`origin`), e o segundo o branch (`master`)
+Repare que a flag `-m` serve para adicionar um comentário sobre o commit que você está fazendo. Esta é uma etapa obrigatória para todos os commits. Se você não usar o `-m`, um editor de texto será aberto para que você escreve uma mensagem.
+
+Agora o arquivo faz parte do repositório do Git, mas apenas **localmente**. Para enviá-lo ao servidor remoto (já configurado), usamos o comando `git push` com dois argumentos. O primeiro indica o servidor remoto (`origin`), e o segundo o branch (`master`)
 
 ```bash
 $ git push origin master 
@@ -107,4 +111,27 @@ Writing objects: 100% (3/3), 258 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To git@github.com:fernandomayer/git-teste.git
  * [new branch]      master -> master
+```
+
+## RESUMO: uso típico do Git
+
+O processo mostrado em detalhes acima é o procedimento mais simples e básico para rastrear arquivos com o Git. Esse processo se repete toda vez que arquivos forem modificados e/ou adicionados ou removidos do repositório.
+
+Podemos resumir esse *workflow* do Git dessa forma:
+
+```bash
+# arquivo foo.R adicionado/modificado
+$ git add foo.R
+$ git commit -m 'mensagem'
+$ git push origin master
+
+# arquivo bar.R adicionado/modificado
+$ git add bar.R
+$ git commit -m 'mensagem'
+$ git push origin master
+
+# arquivos foo.R e bar.R modificados
+$ git add .
+$ git commit -m 'mensagem'
+$ git push origin master
 ```
