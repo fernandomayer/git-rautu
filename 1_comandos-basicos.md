@@ -135,3 +135,29 @@ $ git add .
 $ git commit -m 'mensagem'
 $ git push origin master
 ```
+
+## Alguns comandos úteis
+
+```bash
+# similares aos do shell rm e mv
+$ git rm foo.R
+$ git mv foo.R
+
+# para remover arquivos do repositorio remoto, mas manter localmente
+$ git rm --cached foo.R
+# este comando é útil se você enviou para o repositório remoto algum
+# arquivo que não deveria ou não precisava (como arquivos de compilação
+# do LaTeX, ...). Para evitar que isso aconteça é possível criar um
+# arquivo chamado .gitignore contendo os arquivos que não precisam ser
+# enviados ao servidor remoto
+
+# mostra o log das alterações
+$ git log
+# em uma linha
+$ git log --pretty=oneline
+
+# para reverter um único arquivo para uma versão anterior (sabendo que o
+# arquivo é foo.R e o hash SHA do commit é, por exemplo,
+# 03f9c0abe911440339ecb82e08ec8ae65ca11a7b)
+$ git checkout 03f9c0a foo.R
+```
