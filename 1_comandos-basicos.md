@@ -263,3 +263,7 @@ Total 0 (delta 0), reused 0 (delta 0)
 To git@github.com:fernandomayer/git-teste.git
    03f9c0a..fb62316  master -> master
 ```
+
+## Trabalho colaborativo
+
+(https://help.github.com/articles/using-pull-requests)
