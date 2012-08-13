@@ -28,8 +28,8 @@ Tópicos devem incluir:
 
 [git]: http://git-scm.com
 [GitHub]: https://github.com
-[0]: ./git-rautu/0_configuracao-inicial.md
-[1]: ./1_comandos-basicos.md
+[0]: //0_configuracao-inicial.md
+[1]: .//1_comandos-basicos.md
 [2]: ./2_trabalhando-com-branches.md
 [3]: ./3_trabalho-colaborativo.md
 [CC]: http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt 
