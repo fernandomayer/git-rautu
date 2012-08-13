@@ -2,9 +2,7 @@
 * * * * *
 
 Este material tem o propósito de documentar (e manter atualizados) os
-comandos básicos do sistema controlador de versões
-[git](http://git-scm.com), e como utilizá-lo com o
-[GitHub](https://github.com), um repositório que serve como um servidor
+comandos básicos do sistema controlador de versões [git][], e como utilizá-lo com o [GitHub][], um repositório que serve como um servidor
 central para seus projetos.
 
 O material é baseado nas páginas de ajuda do próprio GitHub, e em
@@ -19,10 +17,19 @@ texto. Contribuições serão sempre bem vindas!
 
 Tópicos devem incluir:
 
-0. Configuração inicial
-1. Comandos básicos de criação e controle de arquivos
-3. ...
+0. [Configuração inicial][0]
+1. [Comandos básicos de criação e controle de arquivos][1]
+2. [Trabalhando com branches][2]
+3. [Trabalho colaborativo][3]
 
 > **LICENÇA**: Este material é produzido com uma licença
-    [Creative Commons BY-NC-SA]
-    (http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt)
+    [Creative Commons BY-NC-SA][CC]
+    
+
+[git]: http://git-scm.com
+[GitHub]: https://github.com
+[0]: ./0_configuracao-inicial.md
+[1]: ./1_comandos-basicos.md
+[2]: ./2_trabalhando-com-branches.md
+[3]: ./3_trabalho-colaborativo.md
+[CC]: http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt 
