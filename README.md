@@ -21,6 +21,7 @@ Tópicos devem incluir:
 1. [Comandos básicos de criação e controle de arquivos][1]
 2. [Trabalhando com branches][2]
 3. [Trabalho colaborativo][3]
+4. ... [em desenvolvimento]
 
 > **LICENÇA**: Este material é produzido com uma licença
     [Creative Commons BY-NC-SA][CC]
