@@ -168,4 +168,8 @@ $ git log --pretty=oneline
 # arquivo é foo.R e o hash SHA do commit é, por exemplo,
 # 03f9c0abe911440339ecb82e08ec8ae65ca11a7b)
 $ git checkout 03f9c0a foo.R
+
+# para corrigir uma mensagem de commit que ainda não foi enviada para um # remote. Essa será a mensagem utilizada nos logs e irá substituir
+# qualquer outra anterior
+$ git commit --amend -m 'mensagem nova'
 ```
