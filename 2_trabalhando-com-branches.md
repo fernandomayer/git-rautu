@@ -1,5 +1,7 @@
 ## Trabalhando com branches
 
+A seguir um exemplo comentado de uma sessão utilizando os *branches* do Git. Para mais detalhes ver o capítulo 3 do [livro do Git](http://git-scm.com/book/en/Git-Branching)
+
 ```bash
 # confere os branches atuais
 $ git branch 
@@ -88,7 +90,7 @@ Fast-forward
 $ ls
 foo.R  README
 
-# o reppo está modificado localmente
+# o repo está modificado localmente
 $ git status 
 # On branch master
 nothing to commit (working directory clean)
