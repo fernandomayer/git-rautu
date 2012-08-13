@@ -91,7 +91,7 @@ $ git status
 Nesse momento, o arquivo está em uma *staging area*, ou um lugar pronto para ser enviado ao repositório local. Até aqui o arquivo não faz parte do repositório do Git! Para isso temos que "enviá-lo", ou fazer um *commit*
 
 ```bash
-$ git commit -m 'primeiro commit'
+$ git commit -m 'comentário'
 [master (root-commit) 1490ab0] primeiro commit
  1 file changed, 1 insertion(+)
  create mode 100644 README
@@ -102,7 +102,15 @@ nothing to commit (working directory clean)
 
 Repare que a flag `-m` serve para adicionar um comentário sobre o commit que você está fazendo. Adicionar um comentário é **obrigatório** para todos os commits. Se você não usar o `-m`, o editor de texto padrão do seu sistema (ou aquele configurado inicialmente com `core.editor`, [ver a etapa de configuração](./0_configuracao-inicial.md)) irá abrir para que você entre com uma mensagem.
 
-Agora o arquivo faz parte do repositório do Git, mas apenas **localmente**. Para enviá-lo ao servidor remoto (já configurado), usamos o comando `git push` com dois argumentos. O primeiro indica o servidor remoto (`origin`), e o segundo o branch (`master`)
+Alternativamente, podemos adicionar o arquivo (`git add`) e fazer o commit (`git commit`) em apenas uma etapa, usando a opção `-a` no commit
+
+```bash
+$ git commit -a -m 'comentário'
+```
+
+Dessa forma o arquivo é indexado diretamente, sem passar pela *staging area*. A vantagem é que elimina um comando. A desvantagem é que não existe mais a chance de reverter um arquivo (*unstage*) antes de comitar.
+
+Agora que o arquivo foi comitado, ele faz parte do repositório do Git, mas apenas **localmente**. Para enviá-lo ao servidor remoto (já configurado), usamos o comando `git push` com dois argumentos. O primeiro indica o servidor remoto (`origin`), e o segundo o branch (`master`)
 
 ```bash
 $ git push origin master 
@@ -113,7 +121,7 @@ To git@github.com:fernandomayer/git-teste.git
  * [new branch]      master -> master
 ```
 
-## RESUMO: uso típico do Git
+## Resumo: uso típico do Git
 
 O processo mostrado em detalhes acima é o procedimento mais simples e básico para rastrear arquivos com o Git. Esse processo se repete toda vez que arquivos forem modificados e/ou adicionados ou removidos do repositório.
 
