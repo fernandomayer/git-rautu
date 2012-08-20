@@ -6,7 +6,7 @@ Existem dois modelos básicos de trabalhos em colaboração com outros autores:
 
 * **Fork & Pull**: todos os colaboradores trabalham em *forks* do projeto original. Para incorporar o trabalho é necessário enviar um *pull request* para o mantenedor do projeto, e ele decide se junta (`merge`) ou não as modificações. Mais utilizado quando há muitos colaboradores.
 
-Abaixo segue uma descrição de como trabalhar nois dois casos
+Abaixo segue uma descrição de como trabalhar nois dois casos.
 
 ## Shared repository
 
@@ -44,7 +44,9 @@ Agora as modificações foram incorporadas e os arquivos dos dois autores e de r
 
 > **NOTA**: o comando `git pull` faz o trabalho do `git fetch` e `git merge` ao mesmo tempo, ou seja, ele busca os arquivos modificados nos repositórios e faz o merge automaticamente. Só é recomendado caso você tenha certeza que quer incorporar as modificações (e já conhece todas elas). Resumindo: pode ser perigoso!
 
-Uma boa visualização do que acontece no repositório com os comandos acima pode ser vista no capítulo 5 do [Progit][]
+Uma boa visualização do que acontece no repositório com os comandos acima pode ser vista no capítulo 5 do [Progit][].
+
+Para entender a diferença entre um ***branch* local** e um ***branch* remoto** aprenda com os [GitGuys][].
 
 
 ## Fork & Pull
@@ -54,8 +56,8 @@ TODO
 
 ## Links úteis
 
-https://help.github.com/articles/using-pull-requests
-
-http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project
+* https://help.github.com/articles/using-pull-requests
+* http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project
 
 [Progit]: http://git-scm.com/book/en/Distributed-Git-Contributing-to-a-Project
+[GitGuys]: http://www.gitguys.com/topics/tracking-branches-and-remote-tracking-branches/
