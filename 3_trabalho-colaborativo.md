@@ -38,9 +38,13 @@ O autor B precisa unir estas modificações para o seu *branch* `master` local p
 ```bash
 $ git merge master origin/master
 ```
-Agora as modificações foram incorporadas e os arquivos dos dois autores e de repositório estão com as mesmas versões.
 
-4. Sempre antes de começar a trabalhar em um repositório compartilhado, execute o `git fetch` (ou analise o histórico de commits no GitHub) para ter certeza de que está com as últimas versões dos arquivos.
+4. Nesse ponto, o autor B criou automaticamente um novo commit com o `merge`, contendo as modificações. Portanto, agora o *branch* `master` do autor B, contém um commit a mais do que o *branch* remoto `origin/master`. Por isso, o autor B precisa enviar esse novo commit para o servidor através do `push`
+```bash
+$ git push origin master
+```
+
+5. Sempre antes de começar a trabalhar em um repositório compartilhado, execute o `git fetch` (ou analise o histórico de commits no GitHub) para ter certeza de que está com as últimas versões dos arquivos.
 
 > **NOTA**: o comando `git pull` faz o trabalho do `git fetch` e `git merge` ao mesmo tempo, ou seja, ele busca os arquivos modificados nos repositórios e faz o merge automaticamente. Só é recomendado caso você tenha certeza que quer incorporar as modificações (e já conhece todas elas). Resumindo: pode ser perigoso!
 
