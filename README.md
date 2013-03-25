@@ -29,7 +29,7 @@ Tópicos devem incluir:
 
 [git]: http://git-scm.com
 [GitHub]: https://github.com
-[0]: ./git-rautu/blob/master/0_configuracao-inicial.md
+[0]: 0_configuracao-inicial.md
 [1]: ./git-rautu/blob/master/1_comandos-basicos.md
 [2]: ./git-rautu/blob/master/2_trabalhando-com-branches.md
 [3]: ./git-rautu/blob/master/3_trabalho-colaborativo.md
