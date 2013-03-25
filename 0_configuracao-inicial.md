@@ -29,7 +29,7 @@ automaticamente em todas as suas ações posteriormente)
 
 ```bash
 $ git config --global user.name "Fernando Mayer"
-$ git config --global user.email "fernandomayer@gmail.com"
+$ git config --global user.email "meuemail@servidor.com"
 ```
 
 Além disso podemos definir um editor de texto padrão para escrever as mensagens de *commits*. Por padrão, esse editor é o `$EDITOR` do seu shell. (Essa etapa pode ser pulada a princípio, como veremos mais pra frente). Esse editor não precisa ser necessariamente o mesmo editor que você usa para escrever [texto, código]. No meu caso uso o Emacs, mas para essa tarefa prefiro o vim por ser um editor embutido (e mais leve), e que não vai carregar uma interface gráfica desnecessariamente. Portanto
@@ -64,7 +64,7 @@ Para fazer as transferências de arquivos entre máquina e servidor por
 ssh, é necessário primeiro gerar uma chave ssh local.
 
 ```bash
-$ ssh-keygen -t rsa -C "fernandomayer@gmail.com"
+$ ssh-keygen -t rsa -C "meuemail@servidor.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/fernando/.ssh/id_rsa):
 ```
