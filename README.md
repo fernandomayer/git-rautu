@@ -30,7 +30,7 @@ Tópicos devem incluir:
 [git]: http://git-scm.com
 [GitHub]: https://github.com
 [0]: 0_configuracao-inicial.md
-[1]: ./git-rautu/blob/master/1_comandos-basicos.md
-[2]: ./git-rautu/blob/master/2_trabalhando-com-branches.md
-[3]: ./git-rautu/blob/master/3_trabalho-colaborativo.md
+[1]: 1_comandos-basicos.md
+[2]: 2_trabalhando-com-branches.md
+[3]: 3_trabalho-colaborativo.md
 [CC]: http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt 
