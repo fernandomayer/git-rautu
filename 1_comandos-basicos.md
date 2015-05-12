@@ -169,6 +169,25 @@ $ git log --pretty=oneline
 # 03f9c0abe911440339ecb82e08ec8ae65ca11a7b)
 $ git checkout 03f9c0a foo.R
 
+# para reverter um unico arquivo para uma versao anterior (sendo que
+# esse arquivo foi DELETADO em algum commit anterior)
+# se voce nao lembra o nome do arquivo, execute esse comando que
+# identifica os modos 'delete'
+$ git log --diff-filter=D --summary | grep delete
+# sabendo o nome do arquivo, voce pode conferir o log para identificar o
+# commit que o deletou
+$ git log -- <arquivo-deletado> 
+# NOTE que se o arquivo estava em um sub-diretorio dentro do seu
+# projeto, ele deve ser especificado com o caminho relativo para esse
+# diretorio
+# para ter certeza do commit que deletou o arquivo, veja
+$ git rev-list -n 1 HEAD -- <arquivo-deletado>
+# e finalmente para recuperar o arquivo faca o checkout no commit
+# anterior (por isso o `^` ao final do commit)
+$ git checkout <commit-que-deletou>^ -- <arquivo-deletado>
+# o arquivo deletado devera voltar para o diretorio (ou sub-diretorio se
+# ele estava em um) como um novo arquivo
+  
 # para corrigir uma mensagem de commit que ainda não foi enviada para um # remote. Essa será a mensagem utilizada nos logs e irá substituir
 # qualquer outra anterior
 $ git commit --amend -m 'mensagem nova'
