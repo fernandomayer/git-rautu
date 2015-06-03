@@ -339,7 +339,5 @@ git push origin v0.1
 
 *****
 
-<ul>
-	<li>Voltar: [Configuração inicial](0_configuracao-inicial.md)</li>
-	<li>Continuar: [Trabalhando com branches](2_trabalhando-com-branches.md)</li>
-</ul>
+Voltar: [Configuração inicial](0_configuracao-inicial.md) | 
+Continuar: [Trabalhando com branches](2_trabalhando-com-branches.md)
