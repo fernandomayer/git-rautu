@@ -1,8 +1,10 @@
 # git-rautu
-* * * * *
+
+Comandos básicos do git e seu uso com o GitHub.
 
 Este material tem o propósito de documentar (e manter atualizados) os
-comandos básicos do sistema controlador de versões [git][], e como utilizá-lo com o [GitHub][], um repositório que serve como um servidor
+comandos básicos do sistema controlador de versões [git][], e como
+utilizá-lo com o [GitHub][], um repositório que serve como um servidor
 central para seus projetos.
 
 O material é baseado nas páginas de ajuda do próprio GitHub, e em
@@ -23,9 +25,16 @@ Tópicos devem incluir:
 3. [Trabalho colaborativo][3]
 4. ... [em desenvolvimento]
 
-> **LICENÇA**: Este material é produzido com uma licença
-    [Creative Commons BY-NC-SA][CC]
-    
+## Licença
+
+<a rel="license"
+href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR"><img
+alt="Licença Creative Commons" style="border-width:0"
+src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br
+/>Esta obra foi licenciada sob uma Licença <a rel="license"
+href="http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR">Creative
+Commons Atribuição-CompartilhaIgual 3.0 Não Adaptada</a>.
+
 
 [git]: http://git-scm.com
 [GitHub]: https://github.com
@@ -33,4 +42,3 @@ Tópicos devem incluir:
 [1]: 1_comandos-basicos.md
 [2]: 2_trabalhando-com-branches.md
 [3]: 3_trabalho-colaborativo.md
-[CC]: http://creativecommons.org/licenses/by-nc-sa/3.0/deed.pt 
