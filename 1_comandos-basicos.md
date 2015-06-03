@@ -337,4 +337,6 @@ enviar a tag para o servidor, faça um push na tag:
 git push origin v0.1
 ```
 
+*****
 
+Ir para: [2. Trabalhando com branches](2_trabalhando-com-branches.md)
