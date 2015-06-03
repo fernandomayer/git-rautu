@@ -32,13 +32,21 @@ $ git config --global user.name "Fernando Mayer"
 $ git config --global user.email "meuemail@servidor.com"
 ```
 
-Além disso podemos definir um editor de texto padrão para escrever as mensagens de *commits*. Por padrão, esse editor é o `$EDITOR` do seu shell. (Essa etapa pode ser pulada a princípio, como veremos mais pra frente). Esse editor não precisa ser necessariamente o mesmo editor que você usa para escrever [texto, código]. No meu caso uso o Emacs, mas para essa tarefa prefiro o vim por ser um editor embutido (e mais leve), e que não vai carregar uma interface gráfica desnecessariamente. Portanto
+Além disso podemos definir um editor de texto padrão para escrever as
+mensagens de *commits*. Por padrão, esse editor é o `$EDITOR` do seu
+shell. (Essa etapa pode ser pulada a princípio, como veremos mais pra
+frente). Esse editor não precisa ser necessariamente o mesmo editor que
+você usa para escrever [texto, código]. No meu caso uso o Emacs, mas
+para essa tarefa prefiro o vim por ser um editor embutido (e mais leve),
+e que não vai carregar uma interface gráfica
+desnecessariamente. Portanto 
 
 ```bash
 $ git config --global core.editor vim
 ```
 
-> Comentário: o emacs também pode ser carregado embutido no terminal (sem usar o X), usando a opção `-nw` na sua inicialização.
+> Comentário: o emacs também pode ser carregado embutido no terminal
+> (sem usar o X), usando a opção `-nw` na sua inicialização.
 
 Outra configuração útil é configurar o *password caching*, para que você
 não precise digitar usuário e senha todas as vezes que se comunicar com
@@ -128,3 +136,8 @@ Hi fernandomayer! You've successfully authenticated, but GitHub does not provide
 > Baseado em <https://help.github.com/articles/generating-ssh-keys>
 
 Agora o git está pronto para ser usado com o GitHub!
+
+
+*****
+
+Continuar: [Comandos básicos](1_comandos-basicos.md)
