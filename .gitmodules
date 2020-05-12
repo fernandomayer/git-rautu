@@ -1,3 +1,4 @@
 [submodule "git-teste"]
 	path = git-teste
 	url = git@github.com:fernandomayer/git-rautu.git
+	branch = master
