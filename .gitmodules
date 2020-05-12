@@ -1,0 +1,3 @@
+[submodule "git-teste"]
+	path = git-teste
+	url = ./git-teste/
