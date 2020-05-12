@@ -174,7 +174,8 @@ Note que várias informações são mostradas. De baixo para cima temos:
   [anterior](./0_configuracao-inicial.md), por isso a importância dessa
   configuração)
 - A identificação única do commit. Cada commit possuirá uma
-  identificação única, gerada aleatoriamente no momento de sua criação.
+  identificação única, gerada aleatoriamente no momento de sua criação
+  (tecnicamente é um [hash SHA](https://pt.wikipedia.org/wiki/SHA-2))
 - O identificador `(HEAD -> master)` indica que este é o ponto atual do
   versionamento
 
