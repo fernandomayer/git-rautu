@@ -285,24 +285,24 @@ criados localmente. Para informar o Git que este diretório deve se
 comunicar com o servidor do GitHub criado acima fazemos
 
 ```bash
-git remote add origin git@github.com:fernandomayer/git-teste.git
+git remote add origin https://github.com/fernandomayer/git-teste.git
 ```
 
-O comando `git remote add` serve para adicionar um repositório "remoto",
-que por padrão o Git chama de `origin`, e que nada mais é do que um
-"atalho" para o endereço do servidor. Note que neste caso estamos usando
-um endereço no formato do `SSH`, mas poderia ser também o endereço
-`https`.
+Note que o endereço https://github.com/fernandomayer será diferente, de
+acordo com seu usuário do GitHub, e `git-teste.git` é o nome do
+repositório. O comando `git remote add` serve para adicionar um
+repositório "remoto", que por padrão o Git chama de `origin`, e que nada
+mais é do que um "atalho" para o endereço do servidor. Note que neste
+caso estamos usando um endereço no formato do `https`, mas poderia ser
+também o endereço `SSH`, caso você tenha configurado para isto.
 
-
-Agora que o arquivo foi comitado, ele faz parte do repositório do Git,
-mas apenas **localmente**. Para enviá-lo ao servidor remoto (já
-configurado), usamos o comando `git push` com dois argumentos. O
-primeiro indica o servidor remoto (`origin`), e o segundo o branch
-(`master`)
+Agora que o endereço foi adicionado, é necessário enviar o respositório
+git local para o servidor. Para isso usamos o comando `git push` com
+dois argumentos. O primeiro indica o servidor remoto (`origin`), e o
+segundo o branch (`master`)
 
 ```bash
-$ git push origin master
+git push origin master
 Counting objects: 3, done.
 Writing objects: 100% (3/3), 258 bytes, done.
 Total 3 (delta 0), reused 0 (delta 0)
