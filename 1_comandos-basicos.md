@@ -302,14 +302,46 @@ dois argumentos. O primeiro indica o servidor remoto (`origin`), e o
 segundo o branch (`master`)
 
 ```bash
-git push origin master
-Counting objects: 3, done.
-Writing objects: 100% (3/3), 258 bytes, done.
-Total 3 (delta 0), reused 0 (delta 0)
-To git@github.com:fernandomayer/git-teste.git
- * [new branch]      master -> master
+git push -u origin master
+# Username for 'https://github.com': fernandomayer
+# Password for 'https://fernandomayer@github.com':
+# Enumerating objects: 6, done.
+# Counting objects: 100% (6/6), done.
+# Delta compression using up to 8 threads
+# Compressing objects: 100% (3/3), done.
+# Writing objects: 100% (6/6), 581 bytes | 581.00 KiB/s, done.
+# Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+# To https://github.com/fernandomayer/git-teste.git
+# * [new branch]      master -> master
+# Branch 'master' set up to track remote branch 'master' from 'origin'.
 ```
 
+A opção `-u` é opcional, e só precisa ser utilizada da primeira vez que
+fizer o push (isso fará com que o branch do repositório remoto seja
+comparado com o branch do repositório local). Agora você pode entrar no
+seu repositório no GitHub (neste caso
+https://github.com/fernandomayer/git-teste) e verificar que os arquivos
+e todos so commits (versões) estarão disponíveis lá também.
+
+Uma olhada no status agora mostrará uma informação adicional, avisando
+que o ramo `master` local está sincronizado com o ramo master remoto
+`origin/master`
+
+```bash
+git status
+# On branch master
+# Your branch is up to date with 'origin/master'.
+#
+# nothing to commit, working tree clean
+```
+
+Após fazer alguma modificação ou adicionar mais arquivos, você sempre
+precisará adicionar (`git add`) e comitar (`git commit`) as
+modificações. Lembre-se que até aí tudo está rastreado, mas localmente.
+Depois disso, basta enviar as modificações para o repositório remoto
+(`git push origin master`) para manter uma cópia no GitHub. O `git push`
+pode ser executado logo após cada commit, ou mesmo depois de vários
+commits.
 
 ## Resumo: uso típico do Git
 
@@ -321,20 +353,22 @@ repositório.
 Podemos resumir esse *workflow* do Git dessa forma:
 
 ```bash
-# arquivo foo.R adicionado/modificado
-$ git add foo.R
-$ git commit -m 'mensagem'
-$ git push origin master
+# Arquivo foo.R adicionado/modificado
+git add foo.R
+git commit -m 'Mensagem'
+git push origin master
 
-# arquivo bar.R adicionado/modificado
-$ git add bar.R
-$ git commit -m 'mensagem'
-$ git push origin master
+# Arquivo bar.R adicionado/modificado
+git add bar.R
+git commit -m 'Outra mensagem'
+git push origin master
 
-# arquivos foo.R e bar.R modificados
-$ git add .
-$ git commit -m 'mensagem'
-$ git push origin master
+# Arquivos foo.R e bar.R modificados
+# O ponto (.) aqui significa 'todos', ou seja, pode-se adicionar vários
+# arquivos de uma única vez
+git add .
+git commit -m 'Nova mensagem'
+git push origin master
 ```
 
 ## Alguns comandos úteis
