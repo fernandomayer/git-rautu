@@ -67,7 +67,7 @@ padrão é chamada de `master`), mas podem existir muitas outras. Por
 enquanto vamos trabalhar apenas com o branch principal.
 
 Na última mensagem vemos que ao criar e/ou copiar arquivos para o
-repositório, devemos usar o comando `git add` para "rsatrear" (*track*)
+repositório, devemos usar o comando `git add` para "rastrear" (*track*)
 estes arquivos.
 
 ## Criando e rastreando arquivos
@@ -75,9 +75,9 @@ estes arquivos.
 Para começar a usar o Git precisamos criar e/ou copiar arquivos para o
 repositório que acabamos de criar. No GitHub, um arquivo chamdo `README`
 serve para identificar um projeto e aparece automaticamente na página
-principal do repositório^[Note que o arquivo não possui extensão (o que
+principal do repositório. (Note que o arquivo não possui extensão (o que
 é comum no Linux), mas poderíamos adicionar qualquer extensão de
-arquivos de texto, como `*.md` (Markdown) ou `*.txt` (texto puro)]. Por
+arquivos de texto, como `*.md` (Markdown) ou `*.txt` (texto puro)). Por
 isso, vamos criar esse arquivo (usando um editor de texto qualquer) e
 adicionar algum texto como
 
