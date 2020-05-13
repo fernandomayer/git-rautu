@@ -35,7 +35,7 @@ simultaneamente no mesmo projeto, a partir do mesmo ponto de
 desenvolvimento, mas em ramos diferentes. Ao final, um ou mais ramos
 podem ser incorporados ao desenvolvimento principal, depois de que seja
 certificado que tudo funcionará corretamente. Esta última parte é um
-**merge** (`git merge`), que serve para "unir" dois ramos.
+**merge** (`git merge`), que serve para "unir" um ou mais ramos.
 
 A ideia da criação e desenvolvimento em *branches* é relativamente
 simples:
