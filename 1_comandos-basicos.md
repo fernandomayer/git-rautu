@@ -255,16 +255,18 @@ git log --oneline
 Veja que o `(HEAD -> master)` "saiu" do commit anterior e está agora
 apontando para a versão mais atual do arquivo.
 
-Lembre que, até aqui, este repositório git existe (e é completa válido e
-funcional) apenas **localmente**, ou seja, ele está somente no seu
-computador. Caso aconteça alguma coisa no seu computador e você não
+Lembre que, até aqui, este repositório git existe (e é completamente
+válido e funcional) apenas **localmente**, ou seja, ele está somente no
+seu computador. Caso aconteça alguma coisa no seu computador e você não
 tiver um backup tudo estará perdido. Por isso, é importante você manter
 uma cópia do seu repositório em algum servidor remoto, e para isso
 usaremos o GitHub (mas poderia ser qualquer outro serviço como Gitlab,
 BitBucket, etc). É importante perceber que um repositório git deve ser
 armazenado em um serviço online próprio para isso. Isso significa que
 criar um repositório git em um serviço como o Dropbox (ou similar), por
-exemplo, não fornecerá os benefícios e funcionalidades desejadas.
+exemplo, não fornecerá os benefícios e funcionalidades desejadas. Além
+disso, a hospedagem em um serviço adequado tornará mais fácil a
+colaboração entre usuários, fundamental para projetos de código aberto.
 
 ## Configurando um servidor remoto (GitHub)
 
@@ -371,6 +373,40 @@ git add .
 git commit -m 'Nova mensagem'
 git push origin master
 ```
+
+## Método alternativo para criação de repositórios
+
+Vimos acima como criar e iniciar um repositório git "do zero"
+localmente, ou seja, iniciamos o procedimento no nosso computador e
+depois enviamos para o GitHub.
+
+Uma outra alternativa é fazer o caminho contrário, ou seja, criar o
+repositório **primeiro no GitHub** e depois **clonar** uma cópia para o
+nosso computador. O Git usa o termo *clonar* como um sinônimo de
+*copiar*. O importante é que um repositório clonado contém todas as
+informações, como commits, branches, etc.
+
+Para fazer isso, entre no seu GitHub e clique novamente em `New
+repository`. Dê um nome para o repositório, por exemplo, `git-teste2`.
+Mais abaixo, marque a caixa `Initialize this repository with a README` e
+clique em `Create repository`. Dessa forma, o repositório será criado no
+GitHub já com um arquivo `README.md` e um commit inicial. Agora só é
+necessário clonar o repositório para o seu computador com o endereço
+completo
+
+```bash
+git clone https://github.com/fernandomayer/git-teste2.git
+# Cloning into 'git-teste2'...
+# remote: Enumerating objects: 3, done.
+# remote: Counting objects: 100% (3/3), done.
+# remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+# Receiving objects: 100% (3/3), done.
+```
+
+Dessa forma, você já pode começar a criar e/ou incluir arquivos no
+diretório criado e proceder da mesma forma com a sequência `git add`,
+`git commit` e `git push`. Inclusive o repositório remoto `origin` já
+está configurado e nenhuma configuração adicional é necessária.
 
 ## Alguns comandos úteis
 
