@@ -122,3 +122,20 @@ enviar a tag para o servidor, faça um push na tag:
 ```bash
 git push origin v0.1
 ```
+
+## Revertendo commits
+
+Se quiser **apagar** (definitivamente) commits, use
+`git reset --hard`. Por exemplo, para apagar o último commit (e voltar
+tudo para o penúltimo), faça
+
+```bash
+git reset --hard HEAD~1
+```
+
+Nesse ponto o repositóri olocal já foi resetado. Para enviar para o
+remoto, será necessário usar `-f` para forçar o push
+
+```bash
+git push origin master -f
+```
